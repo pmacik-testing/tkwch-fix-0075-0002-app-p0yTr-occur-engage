@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xkpg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0002-tenant/tkwch-fix-0075-0002-app/devfile-sample-xkpg@sha256:c0524ee0731426e28eaad98bcff353a58489fc1a23fdb12e274323bbdae5d7c5
+        name: my-nodejs
+        resources: {}
+status: {}
